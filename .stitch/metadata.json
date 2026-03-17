@@ -1,0 +1,44 @@
+{
+  "name": "projects/59176409938172374",
+  "projectId": "59176409938172374",
+  "title": "Portfolio Website 5 via stitch",
+  "visibility": "PRIVATE",
+  "createTime": "2026-03-17T12:29:33.316418Z",
+  "updateTime": "2026-03-17T13:19:08.928740Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "SPACE_GROTESK",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#63cf17",
+    "saturation": 3
+  },
+  "screens": {
+    "homepage": {
+      "id": "09d3d510c6e246ee97b403a8e57bc72d",
+      "sourceScreen": "projects/59176409938172374/screens/09d3d510c6e246ee97b403a8e57bc72d",
+      "width": 2560,
+      "height": 14786
+    },
+    "about": {
+      "id": "c71bca83bff0462f825bd86c738c0229",
+      "sourceScreen": "projects/59176409938172374/screens/c71bca83bff0462f825bd86c738c0229",
+      "width": 2560,
+      "height": 8584
+    },
+    "services": {
+      "id": "4d221d5a99cd454585983548ff3a8537",
+      "sourceScreen": "projects/59176409938172374/screens/4d221d5a99cd454585983548ff3a8537",
+      "width": 2560,
+      "height": 6834
+    },
+    "blog": {
+      "id": "ffca729441cc488589e48e4b583f3ed8",
+      "sourceScreen": "projects/59176409938172374/screens/ffca729441cc488589e48e4b583f3ed8",
+      "width": 2560,
+      "height": 7804
+    }
+  }
+}
