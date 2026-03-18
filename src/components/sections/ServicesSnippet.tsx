@@ -25,7 +25,7 @@ export function ServicesSnippet() {
           {services.title}
         </motion.h2>
         <motion.p 
-          initial={{ opacity: 0, opacity: 0 }}
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
           className="text-slate-500 max-w-lg font-medium"
@@ -37,7 +37,7 @@ export function ServicesSnippet() {
       <div className="w-full h-px bg-black/5" />
       
       <div className="mt-8">
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion className="w-full">
           {services.items.map((service, index) => (
             <AccordionItem 
               key={service.name} 
