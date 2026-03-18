@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#707a5e",
+                        "accent": "#63cf17",
+                        "background-light": "#f2f2ed",
+                        "background-dark": "#182111",
+                        "olive-dark": "#4a523d",
+                        "beige-dark": "#e5e5df"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "sans": ["Inter", "system-ui", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .editorial-title {
+            font-size: clamp(4rem, 15vw, 12rem);
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+        }
+        body {
+            background-color: #f2f2ed;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-900 dark:text-slate-100 bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between px-6 py-6 md:px-12 lg:px-24 border-b border-primary/10">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-full flex items-center justify-center text-background-light">
+<span class="material-symbols-outlined text-xl">nutrition</span>
+</div>
+<h2 class="font-display text-xl font-bold tracking-tight text-primary uppercase">Aisha Rao</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-sm font-medium text-primary font-bold" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-background-light px-6 py-2 rounded font-display font-bold text-sm tracking-wide hover:bg-olive-dark transition-all">
+                BOOK CONSULT
+            </button>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<img alt="Abstract texture background" class="w-full h-full object-cover grayscale" data-alt="Subtle abstract black and white texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFXw35USv7upg45SxHV1Vlkxur4aH39lmwv8katHJOlQamq3HCzZbAC9RTO25NAwRKKSi1yRejEnASAAD2YYmNii0_N9xQxXnXq1vmLiVyLM2f1rNvqNJJoSns031e0nBHwUSK6cm3Lk9hcaNctb7AdcwjX0IaL72cM4POFPMtFJvmegrdkYJ4HInHzYN36PQvw5Dg1NiT4GQRGharSRGR7EjgOj9DX3i6idbCb3UBUg1I7QwW3tQsRU_vzelDfRzSnln8hcdp"/>
+</div>
+<h1 class="editorial-title font-display font-bold text-primary mb-6">CONTACT</h1>
+<p class="text-2xl md:text-4xl font-display font-light text-slate-700 dark:text-slate-300 max-w-3xl leading-tight">
+                    Let’s build something <span class="text-primary italic font-medium">extraordinary</span> together.
+                </p>
+</section>
+<!-- Layout Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 px-6 md:px-12 lg:px-24 py-20 bg-beige-dark/30">
+<!-- Quick Info (Left Side) -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-12">
+<div class="space-y-12">
+<div>
+<h3 class="font-display text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4">Email</h3>
+<a class="text-2xl md:text-3xl font-display hover:text-primary transition-colors" href="mailto:hello@aisharao.com">hello@aisharao.com</a>
+</div>
+<div>
+<h3 class="font-display text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4">Location</h3>
+<p class="text-2xl md:text-3xl font-display">100% Virtual / Pan-India &amp; Global</p>
+</div>
+<div>
+<h3 class="font-display text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4">Social</h3>
+<div class="flex flex-col gap-4">
+<a class="text-xl font-display flex items-center gap-2 hover:translate-x-2 transition-transform underline underline-offset-4 decoration-primary/30" href="#">
+                                    Instagram
+                                </a>
+<a class="text-xl font-display flex items-center gap-2 hover:translate-x-2 transition-transform underline underline-offset-4 decoration-primary/30" href="#">
+                                    LinkedIn
+                                </a>
+<a class="text-xl font-display flex items-center gap-2 hover:translate-x-2 transition-transform underline underline-offset-4 decoration-primary/30" href="#">
+                                    Twitter
+                                </a>
+</div>
+</div>
+</div>
+<div class="hidden lg:block relative aspect-[4/5] rounded overflow-hidden">
+<img alt="Professional portrait" class="w-full h-full object-cover grayscale" data-alt="Minimalist black and white professional portrait of a nutritionist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhikI1c-nvJ4DcfuXhob1GZyApisFUmZik_vaiUOrZEN_h1uD0kirenFo7QK8USBwxkImbCfsaOTJP7HFAHTdMkpD6t-bDxqzbl39Du08eZCsZXFNh4S0akZoqhkXDSVutwOgiTEOKrPuKj_6_-SkXOWcsv2hKTIuM4UXWYxMJUcQ32cc-3_oF1bvgBSDHUn7z26fZhCnQzHD1OvPTf7hz1P7FHfRdSPHyP6g4wX0nWU1QFDKfSM_W21MHdBAHw_TpwLSuWhqG"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+<!-- Contact Form (Right Side) -->
+<div class="lg:col-span-7 bg-white dark:bg-slate-900 p-8 md:p-12 shadow-2xl shadow-primary/5 rounded">
+<form action="#" class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-display text-xs font-bold uppercase tracking-widest text-slate-500" for="name">Name</label>
+<input class="w-full border-0 border-b border-beige-dark focus:ring-0 focus:border-primary bg-transparent py-3 text-lg transition-all" id="name" placeholder="Enter your full name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-display text-xs font-bold uppercase tracking-widest text-slate-500" for="email">Email Address</label>
+<input class="w-full border-0 border-b border-beige-dark focus:ring-0 focus:border-primary bg-transparent py-3 text-lg transition-all" id="email" placeholder="hello@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-display text-xs font-bold uppercase tracking-widest text-slate-500" for="subject">Subject</label>
+<select class="w-full border-0 border-b border-beige-dark focus:ring-0 focus:border-primary bg-transparent py-3 text-lg transition-all appearance-none" id="subject">
+<option value="sports-nutrition">Sports Nutrition Coaching</option>
+<option value="speaking">Speaking Engagement</option>
+<option value="other">Other Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-display text-xs font-bold uppercase tracking-widest text-slate-500" for="message">Message</label>
+<textarea class="w-full border-0 border-b border-beige-dark focus:ring-0 focus:border-primary bg-transparent py-3 text-lg transition-all resize-none" id="message" placeholder="Tell me about your goals..." rows="5"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto bg-primary text-background-light px-12 py-5 rounded font-display font-bold text-lg tracking-widest hover:bg-olive-dark transition-all flex items-center justify-center gap-3" type="submit">
+                                SEND MESSAGE
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-background-light px-6 md:px-12 lg:px-24 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-12 mb-12">
+<div class="space-y-4">
+<h2 class="font-display text-2xl font-bold uppercase tracking-tighter">Aisha Rao</h2>
+<p class="text-sm opacity-70 leading-relaxed font-light">Performance nutrition for elite athletes and driven professionals. Science-backed, human-centered.</p>
+</div>
+<div>
+<h4 class="font-display text-sm font-bold uppercase tracking-[0.2em] mb-6">Explore</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li><a class="hover:opacity-100 transition-opacity" href="#">Philosophy</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="#">Work with me</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="#">Success Stories</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="#">Resources</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display text-sm font-bold uppercase tracking-[0.2em] mb-6">Legal</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li><a class="hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="#">Disclaimer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display text-sm font-bold uppercase tracking-[0.2em] mb-6">Newsletter</h4>
+<form class="flex border-b border-white/30 py-1">
+<input class="bg-transparent border-0 focus:ring-0 text-sm w-full placeholder:text-white/40" placeholder="Email" type="email"/>
+<button class="material-symbols-outlined" type="submit">trending_flat</button>
+</form>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="text-[10px] md:text-xs opacity-50 max-w-2xl leading-relaxed uppercase tracking-widest text-center md:text-left">
+                    Medical Disclaimer: The information provided on this website is for educational purposes only and is not intended as medical advice. Always consult with a qualified healthcare professional before starting any nutrition or exercise program.
+                </p>
+<p class="text-xs opacity-50 whitespace-nowrap">
+                    © 2024 AISHA RAO. ALL RIGHTS RESERVED.
+                </p>
+</div>
+</footer>
+</div>
+</body></html>
