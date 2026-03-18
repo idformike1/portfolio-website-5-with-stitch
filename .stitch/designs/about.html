@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6B705C", // Olive green from reference
+                        "brand-olive": "#6B705C",
+                        "brand-cream": "#F4F3EE", // Off-white/Cream from reference
+                        "background-light": "#F4F3EE",
+                        "background-dark": "#1B1B1B",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #F4F3EE;
+        }
+        .huge-title {
+            font-size: clamp(4rem, 15vw, 14rem);
+            line-height: 0.85;
+            letter-spacing: -0.05em;
+        }
+        .section-divider {
+            border-top: 1px solid #d1d1d1;
+            margin: 4rem 0;
+        }
+        .footer-huge-name {
+            font-size: clamp(3rem, 20vw, 18rem);
+            line-height: 0.8;
+            letter-spacing: -0.04em;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-slate-900 antialiased overflow-x-hidden">
+<!-- Navigation -->
+<header class="w-full px-6 lg:px-12 py-6 flex justify-between items-center bg-brand-cream sticky top-0 z-50">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-slate-900 rounded-full flex items-center justify-center text-[10px] text-white font-bold">AR</div>
+</div>
+<div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest">
+<a class="hover:opacity-50 transition-opacity" href="#">About</a>
+<a class="hover:opacity-50 transition-opacity" href="#">Services</a>
+<a class="hover:opacity-50 transition-opacity" href="#">Blog</a>
+<a class="hover:opacity-50 transition-opacity" href="#">Contact</a>
+</div>
+<div class="text-[11px] font-bold uppercase tracking-widest">©2025</div>
+</header>
+<main class="max-w-[1400px] mx-auto px-6 lg:px-12">
+<!-- Hero Section -->
+<section class="pt-12 pb-24 relative">
+<div class="flex flex-col lg:flex-row justify-between items-end mb-4 px-2">
+<div class="text-[11px] font-bold uppercase tracking-tighter leading-tight">
+                Performance<br/>Nutritionist
+            </div>
+<div class="text-[11px] font-bold uppercase tracking-tighter leading-tight text-right">
+                Product<br/>Scientist
+            </div>
+<div class="hidden lg:block text-[11px] font-bold uppercase tracking-tighter leading-tight">
+                Since 2018
+            </div>
+</div>
+<h1 class="huge-title font-bold text-slate-900 text-center uppercase mb-[-2vw]">Aisha</h1>
+<div class="relative w-full aspect-[16/9] lg:aspect-[21/9] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 cursor-pointer">
+<img alt="Aisha Rao" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9S_ok-pgPiTE0nKxm1d30ofTl3P0Trh0DqcCHLIZhNKLuIqamprJPvJCXRQD263Jh1w2BszUnwJs66t013Piurz24NppZroEkZWRLlZ_6_lJjtYGXLNVTQs0Tsk-Uo92ud5dLlHmpW8xnUQXgJjyHfxyReKvbT-MyNI6anHUvo02VjY39IAMwZIIGgU5B1DyYuIIjB2VBVAF4SmAbLsFDKLXJFyTXw89-P0Ru2BUf_y-wU8RWN9NIST4IHbax7r1ZqKMZ6ZEx"/>
+</div>
+</section>
+<!-- About Me / My Story -->
+<section class="py-24 max-w-5xl">
+<h2 class="text-6xl font-bold mb-12 tracking-tighter">My Story</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="space-y-6 text-xl leading-snug text-slate-700">
+<p>A former competitive sprinter, Aisha understands the fine margins between winning and losing. Her journey from the track to the lab was fueled by a singular question: How can we optimize the human engine through what we consume?</p>
+<p>This curiosity led her to an MSc in Sport and Exercise Nutrition from the prestigious Loughborough University, world-renowned for its athletic research. There, she honed her ability to translate complex biochemical data into actionable dietary strategies.</p>
+</div>
+<div class="flex items-end">
+<div class="flex gap-16">
+<div>
+<div class="text-4xl font-bold">12+</div>
+<div class="text-[10px] uppercase font-bold tracking-widest mt-1 opacity-50">Years Sport Exp.</div>
+</div>
+<div>
+<div class="text-4xl font-bold">500+</div>
+<div class="text-[10px] uppercase font-bold tracking-widest mt-1 opacity-50">Athletes Fueled</div>
+</div>
+<div>
+<div class="text-4xl font-bold">15+</div>
+<div class="text-[10px] uppercase font-bold tracking-widest mt-1 opacity-50">Elite Teams</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Credentials / My Service equivalent -->
+<section class="py-24">
+<h2 class="text-6xl font-bold mb-4 tracking-tighter">Credentials</h2>
+<p class="text-slate-500 mb-16 max-w-lg">Double-accredited practitioner combining elite athletic experience with rigorous scientific research.</p>
+<div class="space-y-px bg-slate-200">
+<!-- SENR -->
+<div class="group bg-brand-cream py-10 flex flex-col md:flex-row md:items-center justify-between transition-all hover:bg-brand-olive hover:text-white px-4 cursor-pointer">
+<div>
+<h3 class="text-4xl font-bold tracking-tight">SENR Accredited</h3>
+<p class="text-slate-500 group-hover:text-white/70 mt-2 max-w-md">The Sport and Exercise Nutrition Register (SENR) is a voluntary register for qualified and experienced individuals who have the knowledge and skills to work as a Sport and Exercise Nutritionist.</p>
+</div>
+<div class="mt-8 md:mt-0 flex items-center gap-4">
+<div class="hidden group-hover:block transition-all transform scale-100 origin-right">
+<img alt="Training" class="h-32 w-48 object-cover rounded-sm shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFLwKHo4rzVf7Lcnsb5XJN_QSjP8xNe3INiGMmsIZ0q_yCmnez_-zzoiLGpV0Dn_2jy2X0nSF5QHf3pf7NeF24kB7UCGoUTWvyWvF7XEge4vyer3TJaNYp7LKCYnmYyb0qPZxb2z2zwJ2emKJlNCmWBe2Js9Q7mg6G2tqe4EHVzMGafsCgK6xd8_HwJl83p9npC6G1LPA1HaRbn8s9UQ9zpKhl6IwMqw6DVZ2T0zmXBjA9GsUIl5fKk-7-EwbMhn3CTDyBdvwp"/>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+</div>
+<!-- MSc -->
+<div class="group bg-brand-cream py-10 flex flex-col md:flex-row md:items-center justify-between transition-all hover:bg-brand-olive hover:text-white px-4 cursor-pointer">
+<div>
+<h3 class="text-4xl font-bold tracking-tight">MSc Sport &amp; Exercise</h3>
+<p class="text-slate-500 group-hover:text-white/70 mt-2 max-w-md">Loughborough University. Specialized in sport and exercise metabolism and nutrition strategies for elite performance.</p>
+</div>
+<div class="mt-8 md:mt-0 flex items-center gap-4">
+<div class="hidden group-hover:block transition-all transform scale-100 origin-right">
+<img alt="Lab" class="h-32 w-48 object-cover rounded-sm shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHIUYlO1ooFkPoc1KvjFOIuoUlkXN0ldtU7aRG13z0PU-xAo16lnYUooJLVctnnu5D9ZGGPS3oTzxFMY_Bir0wOPPZopZr194lYLvJGd6NJAk6oJ-W8cwyvxaIRKIEq4z4gXkSa8V23tXPLvVo52SaRi_sLJZqsy7tRg7XhD3XgY7A-LWEo9j4qJPgaRgBRFtqpuQeMrvo9KcWYJ0QCNesZv-fw2hr5HldGIeYdaZjpAIpppUL5lSz0_UPhqlBx46rOlyKFgio"/>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+</div>
+<!-- RNutr -->
+<div class="group bg-brand-cream py-10 flex flex-col md:flex-row md:items-center justify-between transition-all hover:bg-brand-olive hover:text-white px-4 cursor-pointer">
+<div>
+<h3 class="text-4xl font-bold tracking-tight">RNutr Registered</h3>
+<p class="text-slate-500 group-hover:text-white/70 mt-2 max-w-md">UK Voluntary Register of Nutritionists (UKVRN). Evidence-based practice in nutrition science.</p>
+</div>
+<div class="mt-8 md:mt-0 flex items-center gap-4">
+<div class="hidden group-hover:block transition-all transform scale-100 origin-right">
+<img alt="Nutrition" class="h-32 w-48 object-cover rounded-sm shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8FDpozk_tFD7XZ_bLUGKI-ct_zuxsS-wZ7xbpd0G84EfZYFLKionuOHyE5SL1gYz-IuYw-uymILJwZALf5e4YW9r_MTv2glIyW0Wb0mbHE5K_2Gi2RL_cNOC7VNFaBNsnoLoRDHlPDNxjFRcdzSROM2JxuN-Wseou1k_32F2TfGDkG7clPTtIU4DczZqGD2UCVZQwKtn-Fw6Q3Mrf4ghbNsRC7zpKGPfJBlaRJMS7dNGTrnrZcUTlIuO-_15em_qdb2Kk3dOQ"/>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+</section>
+<div class="section-divider"></div>
+<!-- Ethics / Philosophy -->
+<section class="py-24">
+<h2 class="text-6xl font-bold mb-16 tracking-tighter">My Ethics</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="aspect-square bg-white p-8 flex flex-col justify-between border border-slate-100 shadow-sm">
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-30">01 / Methodology</div>
+<div>
+<h4 class="text-2xl font-bold mb-4">Evidence-First</h4>
+<p class="text-slate-500 text-sm leading-relaxed">No fads, no trends. Every recommendation is backed by peer-reviewed research and tailored to your specific metabolic profile.</p>
+</div>
+</div>
+<div class="aspect-square bg-brand-olive text-white p-8 flex flex-col justify-between shadow-lg">
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-30">02 / Design</div>
+<div>
+<h4 class="text-2xl font-bold mb-4">Athlete-Centric</h4>
+<p class="text-white/70 text-sm leading-relaxed">Nutrition must fit your training schedule, not the other way around. We build sustainable habits that work in the real world.</p>
+</div>
+</div>
+<div class="aspect-square bg-white p-8 flex flex-col justify-between border border-slate-100 shadow-sm">
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-30">03 / Longevity</div>
+<div>
+<h4 class="text-2xl font-bold mb-4">Resilience</h4>
+<p class="text-slate-500 text-sm leading-relaxed">We focus on health as the foundation of performance, ensuring your career has longevity and your body remains resilient.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-brand-olive text-white pt-24 pb-12 mt-24 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-[1400px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-32">
+<div class="space-y-4">
+<p class="text-white/60 text-sm font-medium tracking-wide uppercase">I'm excited to hear from you!</p>
+<a class="text-3xl md:text-5xl font-bold underline underline-offset-8 hover:opacity-70 transition-opacity" href="mailto:hello@aisharao.com">hello@aisharao.com</a>
+</div>
+<div class="flex flex-col gap-2 text-[11px] font-bold uppercase tracking-widest">
+<span class="text-white/40 mb-2 font-normal">Sitemap</span>
+<a class="hover:text-white/60" href="#">About Me</a>
+<a class="hover:text-white/60" href="#">Services</a>
+<a class="hover:text-white/60" href="#">Contact Me</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between border-t border-white/10 pt-12">
+<div class="flex gap-6 mb-8 md:mb-0">
+<a class="text-white/40 hover:text-white text-xl transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-white/40 hover:text-white text-xl transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-white/40 hover:text-white text-xl transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+<div class="text-[10px] font-bold tracking-widest uppercase text-white/40">
+                © Aisha Rao. All rights reserved
+            </div>
+</div>
+<div class="mt-12 text-center relative">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 flex items-center justify-center bg-white text-brand-olive size-12 rounded-full cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">north</span>
+</div>
+<h1 class="footer-huge-name font-bold text-white uppercase opacity-100 select-none">Aisha</h1>
+</div>
+<div class="text-[11px] font-bold uppercase tracking-widest text-right mt-4 opacity-40">@aisha.nutrition_</div>
+</div>
+</footer>
+</body></html>

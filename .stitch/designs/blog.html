@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Performance Hub | Aisha Rao</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6b705c", // Olive Green from reference
+                        "accent": "#a5a58d",
+                        "beige-light": "#f0ede5", // Beige background from reference
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#182111",
+                        "olive-dark": "#4a4e31",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #f0ede5;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-heading {
+            font-size: clamp(3rem, 12vw, 10rem);
+            line-height: 0.9;
+            letter-spacing: -0.04em;
+        }
+        .footer-heading {
+            font-size: clamp(4rem, 20vw, 25rem);
+            line-height: 0.8;
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="text-slate-900 antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-beige-light/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+<div class="h-3 w-3 rounded-full bg-primary"></div>
+<h1 class="text-sm font-bold uppercase tracking-widest text-slate-900">Aisha Rao</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-xs font-bold uppercase tracking-widest text-primary" href="#">Blog</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">Resources</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-[10px] font-bold uppercase tracking-widest opacity-50">©2024</span>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="px-6 pt-20 pb-12 border-b border-primary/10">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+<div class="flex gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
+<span>Endurance</span>
+<span>•</span>
+<span>Performance</span>
+<span>•</span>
+<span>Science</span>
+</div>
+</div>
+<h2 class="hero-heading font-bold text-primary mb-16 text-center md:text-left">
+                    The<br/>Performance<br/>Hub
+                </h2>
+<div class="max-w-2xl ml-auto">
+<p class="text-xl md:text-2xl text-slate-700 leading-tight mb-8">
+                        Insights and evidence-based strategies for peak performance. A collection of research-backed articles on nutrition, physiology, and the mental edge.
+                    </p>
+<div class="flex items-center gap-12">
+<div>
+<span class="block text-2xl font-bold">150+</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Articles</span>
+</div>
+<div>
+<span class="block text-2xl font-bold">25k</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Subscribers</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Feed - Grid Pattern like 'Recent Work' -->
+<section class="px-6 py-24 bg-white">
+<div class="mx-auto max-w-7xl">
+<div class="mb-20">
+<h3 class="text-4xl font-bold tracking-tight mb-4">Recent Insights</h3>
+<p class="text-slate-500 max-w-xl">Deep dives into the mechanics of elite endurance performance.</p>
+</div>
+<!-- Main Featured Post -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-32">
+<div class="lg:col-span-7">
+<div class="aspect-[16/10] w-full overflow-hidden rounded-sm bg-beige-light group relative">
+<img alt="Carbohydrate loading" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmxLIaLtEgR1tHvBnOXzhp1S5_tPmAXq5ltcpKV4zlWSSsE3nLHygBcw6JW3szQQ5_UQOIGiBeZUXd5P4CUvMxk3h79p-K1d2CDbHCDTn0L09_Vvx1VMtrEHWIcevyUDEEBvlV0jJFpIftlXx0-8G9qP2WOycRM-fPxoMQlnEKgffuNIKsXB5X6zD9K_SuJPYKFCcowJwcS4zOo0TYrGOUcI-i0p0nY9RxtPIa7NARyUx7Zlko0RGTs2Ni15I4F1aU5hmybLqY"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-primary mb-6">
+<span>Nutrition</span>
+<span class="h-px w-8 bg-primary/30"></span>
+<span class="text-slate-400">8 min read</span>
+</div>
+<h4 class="text-3xl md:text-4xl font-bold leading-tight mb-6 hover:text-primary transition-colors cursor-pointer">
+                            The Ultimate Guide to Carbohydrate Loading for Indian Marathoners
+                        </h4>
+<p class="text-slate-600 mb-8 leading-relaxed">
+                            Mastering your fuel for race day with local Indian staples. From Poha to Sweet Potato, learn how to maximize glycogen stores without digestive distress in the tropical heat.
+                        </p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest border-b border-primary pb-1 self-start hover:gap-4 transition-all" href="#">
+                            Read Full Story <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Grid Posts - Like 'Stay Updated' -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group">
+<div class="aspect-square mb-6 overflow-hidden bg-beige-light">
+<img alt="Recovery" class="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIyKT5vRGbNiaOVMvsuown1X-_kcdiV7LI3qc9XH11xc5IKOWWx1BqwIHFrCnkX4UzpLfhf-_l0aF3ypvWt-1POUbO7zhZldhjyfIMZnmpFT8rsRzu55B2HRnzgko_pakaqhX5xvoRUgYQ6RqEShcvuHYwp6yeJ-LpJzqaVnw-p7XS66ShxfcXwY-8n3fY_4Ly7XfuHx_sSCpi3BVdl7ZGOLMhWHwjlI2w2h72ZWrHt9lugbTLvmYAl8tQJ7ZWp-8oJ0hzJbm_"/>
+</div>
+<div class="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-3">
+<span>Recovery</span>
+<span>•</span>
+<span>12 Min Read</span>
+</div>
+<h5 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Recovery Protocols for Elite Athletes</h5>
+<p class="text-sm text-slate-500 line-clamp-2">Beyond sleep: the science of active recovery and supplementation for long-term progress.</p>
+</article>
+<article class="group">
+<div class="aspect-square mb-6 overflow-hidden bg-beige-light">
+<div class="h-full w-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/40">science</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-3">
+<span>Training</span>
+<span>•</span>
+<span>15 Min Read</span>
+</div>
+<h5 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">VO2 Max vs. Economy: What Matters?</h5>
+<p class="text-sm text-slate-500 line-clamp-2">Understanding the physiological ceiling vs. how efficiently you move through space.</p>
+</article>
+<article class="group">
+<div class="aspect-square mb-6 overflow-hidden bg-beige-light">
+<div class="h-full w-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/30">psychology</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-3">
+<span>Mindset</span>
+<span>•</span>
+<span>10 Min Read</span>
+</div>
+<h5 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">The Psychology of the 'Wall'</h5>
+<p class="text-sm text-slate-500 line-clamp-2">Mental strategies to push through central fatigue during late-stage endurance events.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Resources Section - Minimalist Cards -->
+<section class="px-6 py-32 border-t border-primary/10">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-20">
+<div>
+<h3 class="text-4xl font-bold tracking-tight mb-4">Trusted Resources</h3>
+<p class="text-slate-500 max-w-md">The tools and platforms I use to stay at the cutting edge of sports science.</p>
+</div>
+<button class="px-8 py-3 bg-primary text-white text-xs font-bold uppercase tracking-widest hover:bg-olive-dark transition-colors">View All Resources</button>
+</div>
+<div class="space-y-4">
+<!-- Resource 1 - Accordion style from 'My Service' -->
+<div class="group border-t border-primary/20 py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-primary/5 transition-colors px-4">
+<div class="max-w-xl">
+<div class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Performance Science</div>
+<h4 class="text-2xl font-bold">Mysportscience</h4>
+<p class="mt-4 text-slate-600 hidden group-hover:block transition-all duration-300">Dr. Asker Jeukendrup's platform providing evidence-based nutrition information for athletes and practitioners.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold uppercase tracking-widest opacity-50">Visit Site</span>
+<div class="h-10 w-10 flex items-center justify-center border border-primary/20 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+</div>
+<!-- Resource 2 -->
+<div class="group border-t border-primary/20 py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-primary/5 transition-colors px-4">
+<div class="max-w-xl">
+<div class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Nutrition Education</div>
+<h4 class="text-2xl font-bold">Precision Nutrition</h4>
+<p class="mt-4 text-slate-600 hidden group-hover:block transition-all duration-300">The world leader in nutrition coaching and education. I rely on their research for behavioral change strategies.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold uppercase tracking-widest opacity-50">Visit Site</span>
+<div class="h-10 w-10 flex items-center justify-center border border-primary/20 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+</div>
+<!-- Resource 3 -->
+<div class="group border-t border-b border-primary/20 py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-primary/5 transition-colors px-4">
+<div class="max-w-xl">
+<div class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Academic Research</div>
+<h4 class="text-2xl font-bold">PubMed Central</h4>
+<p class="mt-4 text-slate-600 hidden group-hover:block transition-all duration-300">The primary source for all peer-reviewed sports physiology and nutrition studies used in my writing.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-xs font-bold uppercase tracking-widest opacity-50">Visit Site</span>
+<div class="h-10 w-10 flex items-center justify-center border border-primary/20 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer - Oversized 'Aisha' text from reference -->
+<footer class="bg-primary pt-32 pb-16 text-beige-light relative overflow-hidden">
+<div class="mx-auto max-w-7xl px-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-40">
+<div>
+<h5 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-60">Connect</h5>
+<div class="flex flex-col gap-4">
+<a class="text-2xl font-medium hover:underline" href="mailto:hello@aisharao.com">hello@aisharao.com</a>
+<div class="flex gap-6 mt-4">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#">Instagram</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#">LinkedIn</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#">Twitter</a>
+</div>
+</div>
+</div>
+<div>
+<h5 class="text-[10px] font-bold uppercase tracking-widest mb-8 opacity-60">Medical Disclaimer</h5>
+<p class="text-xs leading-relaxed opacity-60">
+                        The content on this website is for informational purposes only and is not intended as medical advice. Always consult your physician before starting any new diet or exercise program.
+                    </p>
+</div>
+<div class="flex flex-col justify-end items-start md:items-end">
+<button class="h-12 w-12 rounded-full border border-beige-light/30 flex items-center justify-center hover:bg-white hover:text-primary transition-all">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-4">
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-40">©2024 Aisha Rao — All Rights Reserved</p>
+<div class="flex gap-8 text-[10px] font-bold uppercase tracking-widest opacity-40">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Use</a>
+</div>
+</div>
+<div class="footer-heading font-bold text-beige-light text-center md:text-left select-none pointer-events-none">
+                    Aisha
+                </div>
+</div>
+</div>
+<!-- Background decorative dot from reference -->
+<div class="absolute bottom-16 left-6 h-4 w-4 rounded-full bg-beige-light/20"></div>
+</footer>
+</div>
+</body></html>

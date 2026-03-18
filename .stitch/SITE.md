@@ -12,13 +12,13 @@ A premium, modern portfolio highlighting the services and insights of Aisha Rao.
 - **Target Device:** Desktop (Main), Responsive (Mobile/Tablet implementation)
 
 ## 3. Sitemap (Current)
-- [ ] **index** - Homepage: Hero, About snippet, Services, Portfolio grid.
-- [ ] **about** - About Page: Long-form bio and background.
-- [ ] **services** - Services Page: Detailed offerings.
-- [ ] **blog** - Blog & Resources: Articles and industry insights.
+- [x] **index** - Homepage: Hero, About snippet, Services, Portfolio grid.
+- [x] **about** - About Page: Long-form bio and background.
+- [x] **services** - Services Page: Detailed offerings.
+- [x] **blog** - Blog & Resources: Articles and industry insights.
 
 ## 4. Roadmap
-- **Iteration 1:** Initialize project and global layout (Navbar/Footer).
-- **Iteration 2:** Implement Homepage with Shadcn components.
-- **Iteration 3:** Implement About and Services pages.
-- **Iteration 4:** Implement Blog page and final responsive audit.
+- [x] **Iteration 1:** Initialize project and global layout (Navbar/Footer).
+- [x] **Iteration 2:** Implement Homepage with Shadcn components.
+- [x] **Iteration 3:** Implement About and Services pages.
+- [x] **Iteration 4:** Implement Blog page and final responsive audit.

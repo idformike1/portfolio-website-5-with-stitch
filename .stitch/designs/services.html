@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#707a5e", // Olive green from reference
+                        "accent": "#63cf17", // Original primary as accent
+                        "background-light": "#f2f2ed", // Off-white from reference
+                        "background-dark": "#1a1a1a",
+                        "olive-dark": "#5a634a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Services &amp; Pricing | Aisha Rao Nutrition</title>
+</head>
+<body class="bg-background-light text-slate-900 font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden border-[16px] border-primary lg:border-[32px]">
+<!-- Top Navigation (Minimal Editorial Style) -->
+<header class="flex items-center justify-between px-6 py-8 lg:px-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">nutrition</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase">Aisha Rao</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[10px] font-black uppercase tracking-widest text-primary" href="#">Services</a>
+<a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="text-[10px] font-black uppercase tracking-widest">©2024</div>
+</header>
+<main class="flex-1">
+<!-- Hero Title (Massive Editorial Typography) -->
+<section class="px-6 py-12 lg:px-12 text-center lg:text-left">
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+<h1 class="text-[15vw] lg:text-[12vw] font-bold leading-[0.85] tracking-tighter text-primary uppercase">
+                        Services
+                    </h1>
+<div class="max-w-md lg:pb-4">
+<p class="text-sm font-medium leading-relaxed text-slate-600">
+                            Expert-led nutrition strategies designed to elevate your health and performance through personalized coaching and science-backed protocols.
+                        </p>
+</div>
+</div>
+<div class="w-full h-px bg-primary/20 mt-12 mb-20"></div>
+</section>
+<!-- Services Section (List Style from Reference) -->
+<section class="px-6 lg:px-12 mb-32">
+<div class="mb-12">
+<h2 class="text-4xl font-bold tracking-tight mb-4">My Service</h2>
+<p class="text-xs font-medium text-slate-500 uppercase tracking-widest">High-performance nutrition coaching packages.</p>
+</div>
+<!-- Package 1: Elite Performer (Expanded by default like "Webflow Designer" in ref) -->
+<div class="border-t border-primary/20 py-12 group transition-all">
+<div class="flex flex-col lg:flex-row justify-between items-start gap-8">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-6">
+<h3 class="text-3xl lg:text-5xl font-bold tracking-tight uppercase">The Elite Performer</h3>
+<div class="bg-primary text-white text-[10px] font-black px-3 py-1 uppercase tracking-widest">Most Popular</div>
+</div>
+<p class="text-lg text-slate-600 mb-8 max-w-2xl">
+                                Comprehensive coaching for those committed to peak transformation. Includes weekly calls, custom meal plans, and bloodwork analysis.
+                            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">arrow_right_alt</span>
+<span class="text-sm font-bold uppercase tracking-wide">Weekly 1:1 Coaching</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">arrow_right_alt</span>
+<span class="text-sm font-bold uppercase tracking-wide">Bloodwork Analysis</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">arrow_right_alt</span>
+<span class="text-sm font-bold uppercase tracking-wide">Custom Meal Plans</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">arrow_right_alt</span>
+<span class="text-sm font-bold uppercase tracking-wide">Priority Support</span>
+</div>
+</div>
+<div class="flex items-baseline gap-4 mt-8">
+<span class="text-4xl lg:text-6xl font-bold tracking-tighter text-primary">₹15,000</span>
+<span class="text-xs font-black uppercase tracking-widest text-slate-400">/ Monthly</span>
+</div>
+</div>
+<div class="w-full lg:w-96 aspect-square bg-white border border-primary/10 p-2 shadow-2xl relative">
+<div class="w-full h-full bg-primary/5 flex flex-col items-center justify-center p-8 text-center">
+<span class="material-symbols-outlined text-6xl text-primary/40 mb-4">star</span>
+<p class="text-[10px] font-black uppercase tracking-[0.2em] mb-6">Total Transformation</p>
+<button class="w-full bg-primary text-white py-4 font-black uppercase tracking-[0.2em] text-[10px] hover:bg-olive-dark transition-colors">
+                                    Apply Now
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Package 2: Nutrition Tune-Up (Collapsed style like "Ui-Ux Design" in ref) -->
+<div class="border-t border-primary/20 py-10 group hover:bg-primary/5 transition-colors cursor-pointer">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-3xl lg:text-5xl font-bold tracking-tight uppercase group-hover:translate-x-2 transition-transform">The Nutrition Tune-Up</h3>
+<div class="flex items-center gap-6 mt-2 opacity-60">
+<span class="text-xs font-black uppercase tracking-widest">Foundational coaching</span>
+<span class="text-sm font-bold text-primary">₹6,500 One-time</span>
+</div>
+</div>
+<div class="w-12 h-12 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">north_east</span>
+</div>
+</div>
+</div>
+<!-- Tools Section (Grid like "Stay Updated" in ref) -->
+<div class="border-t border-primary/20 pt-24 pb-12 mt-20">
+<h2 class="text-4xl font-bold tracking-tight mb-4 uppercase">Technology Stack</h2>
+<p class="text-xs font-medium text-slate-500 uppercase tracking-widest mb-16">Powered by industry-leading tools for seamless progress tracking.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col gap-6">
+<div class="aspect-video bg-slate-900 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+<div class="absolute inset-0 flex items-center justify-center text-white/20">
+<span class="material-symbols-outlined text-9xl">dashboard</span>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold uppercase mb-2">Practice Better Portal</h4>
+<p class="text-sm text-slate-600 leading-relaxed">Secure, all-in-one client dashboard for easy scheduling, habit tracking, and resources.</p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="aspect-video bg-slate-800 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+<div class="absolute inset-0 flex items-center justify-center text-white/20">
+<span class="material-symbols-outlined text-9xl">menu_book</span>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold uppercase mb-2">That Clean Life</h4>
+<p class="text-sm text-slate-600 leading-relaxed">Professional software for personalized recipe collections and flexible meal plans.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section (Framed style like "Showcasing My Best Work" in ref) -->
+<section class="px-6 lg:px-12 mb-32">
+<div class="border border-primary/20 p-8 lg:p-20 relative bg-white overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/4"></div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-5xl lg:text-7xl font-bold tracking-tight uppercase leading-tight mb-8">
+                            Ready to transform your health?
+                        </h2>
+<p class="text-lg text-slate-600 mb-12">
+                            Book your free 15-minute discovery call to find the best package for your unique lifestyle and long-term goals.
+                        </p>
+<button class="bg-primary text-white px-10 py-5 font-black uppercase tracking-[0.2em] text-xs hover:bg-olive-dark transition-all transform hover:-translate-y-1">
+                            Schedule Discovery Call
+                        </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Style from reference bottom) -->
+<footer class="bg-primary px-6 py-16 lg:px-12 text-white">
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-white/60">I'm excited to hear from you!</p>
+<a class="text-3xl lg:text-5xl font-bold tracking-tight hover:text-accent transition-colors" href="mailto:hello@aisharao.com">hello@aisharao.com</a>
+</div>
+<div class="flex flex-col items-end gap-6">
+<div class="flex gap-6">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+<p class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">© Aisha Rao Nutrition. All rights reserved.</p>
+</div>
+</div>
+<div class="mt-20 flex flex-col items-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">arrow_upward</span>
+</div>
+<h2 class="text-[18vw] lg:text-[15vw] font-bold leading-none tracking-tighter opacity-20 uppercase select-none">Aisha</h2>
+<div class="text-xs font-bold tracking-[0.5em] uppercase mt-[-2vw]">@aisharao_nutrition</div>
+</div>
+</footer>
+</div>
+</body></html>
