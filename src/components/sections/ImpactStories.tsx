@@ -41,7 +41,7 @@ export function ImpactStories() {
               <img 
                 src={story.image} 
                 alt={story.title}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" 
+                className="w-full h-full object-cover   group-hover:scale-110 transition-all duration-1000" 
               />
             </div>
             <motion.h4 className="text-xl font-bold mb-1 uppercase tracking-tighter text-[#333333]">

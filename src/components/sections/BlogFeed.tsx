@@ -87,7 +87,7 @@ export function BlogFeed() {
                   <img 
                     src={post.image} 
                     alt={post.title} 
-                    className="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" 
+                    className="h-full w-full object-cover   transition-all duration-700 group-hover:scale-110" 
                   />
                 ) : (
                   <div className="h-full w-full bg-[#6b705c]/20 flex items-center justify-center">

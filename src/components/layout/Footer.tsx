@@ -50,7 +50,7 @@ export function Footer() {
             <img 
               src={HOME_CONTENT.hero.portrait} 
               alt="Aisha Rao Portrait"
-              className="w-full h-full object-cover grayscale brightness-90 contrast-110" 
+              className="w-full h-full object-cover  brightness-90 contrast-110" 
             />
           </div>
           <nav className="text-right space-y-2 text-[10px] font-bold uppercase tracking-widest opacity-80 decoration-[#63cf17]">

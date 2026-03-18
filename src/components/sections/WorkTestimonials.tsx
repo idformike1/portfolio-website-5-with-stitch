@@ -38,7 +38,7 @@ export function WorkTestimonials() {
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.author} 
-                    className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 hover:grayscale-0" 
+                    className="w-full h-full object-cover  transition-transform duration-700 group-hover:scale-110 " 
                   />
                 </div>
                 <div>

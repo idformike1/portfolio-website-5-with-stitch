@@ -41,7 +41,7 @@ export function AboutHero() {
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="relative w-full aspect-[16/9] lg:aspect-[21/9] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 cursor-pointer rounded-sm"
+        className="relative w-full aspect-[16/9] lg:aspect-[21/9] overflow-hidden   transition-all duration-700 cursor-pointer rounded-sm"
       >
         <img 
           src={hero.image} 

@@ -24,7 +24,7 @@ export function WorkPortfolio() {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100" 
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110   opacity-80 group-hover:opacity-100" 
                 />
                 <div className="absolute inset-0 bg-[#63cf17]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               </div>

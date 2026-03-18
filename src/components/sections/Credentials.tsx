@@ -56,7 +56,7 @@ export function Credentials() {
                 <img 
                    src={item.image} 
                    alt={item.title} 
-                   className="h-32 w-48 object-cover rounded-sm shadow-2xl grayscale brightness-110" 
+                   className="h-32 w-48 object-cover rounded-sm shadow-2xl  brightness-110" 
                 />
               </motion.div>
               <ArrowUpRight className="w-10 h-10 group-hover:rotate-45 transition-transform duration-500 text-slate-400 group-hover:text-white" />

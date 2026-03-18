@@ -12,7 +12,7 @@ export function ContactHero() {
         <img 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFXw35USv7upg45SxHV1Vlkxur4aH39lmwv8katHJOlQamq3HCzZbAC9RTO25NAwRKKSi1yRejEnASAAD2YYmNii0_N9xQxXnXq1vmLiVyLM2f1rNvqNJJoSns031e0nBHwUSK6cm3Lk9hcaNctb7AdcwjX0IaL72cM4POFPMtFJvmegrdkYJ4HInHzYN36PQvw5Dg1NiT4GQRGharSRGR7EjgOj9DX3i6idbCb3UBUg1I7QwW3tQsRU_vzelDfRzSnln8hcdp" 
           alt="Abstract texture" 
-          className="w-full h-full object-cover grayscale" 
+          className="w-full h-full object-cover " 
         />
       </div>
       

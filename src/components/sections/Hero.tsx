@@ -49,7 +49,7 @@ export function Hero() {
           <img 
             src={hero.portrait} 
             alt="Aisha Rao Portrait" 
-            className="w-full h-full object-cover grayscale brightness-90 contrast-110 group-hover:scale-105 transition-transform duration-1000 ease-in-out" 
+            className="w-full h-full object-cover  brightness-90 contrast-110 group-hover:scale-105 transition-transform duration-1000 ease-in-out" 
           />
           
           {/* QR Code / Badge Element */}
