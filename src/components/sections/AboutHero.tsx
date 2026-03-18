@@ -7,8 +7,8 @@ export function AboutHero() {
   const { hero } = ABOUT_CONTENT;
 
   return (
-    <section className="pt-12 pb-24 relative overflow-hidden">
-      <div className="flex flex-col lg:flex-row justify-between items-end mb-4 px-2">
+    <section className="pt-12 pb-24 px-global relative overflow-hidden">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-4">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}

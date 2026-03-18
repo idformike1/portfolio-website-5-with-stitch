@@ -7,8 +7,8 @@ import { DiscoveryCTA } from "@/components/sections/DiscoveryCTA";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#f2f2ed] border-[16px] border-[#707a5e] lg:border-[32px]">
-      <div className="max-w-[1400px] mx-auto">
+    <main className="min-h-screen bg-[#F0F0E8]">
+      <div className="mx-auto">
         <Navbar />
         <ServicesHero />
         <ServicePackages />

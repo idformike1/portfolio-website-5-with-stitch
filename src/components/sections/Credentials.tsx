@@ -8,7 +8,7 @@ export function Credentials() {
   const { credentials } = ABOUT_CONTENT;
 
   return (
-    <section className="py-24">
+    <section className="py-24 px-global">
       <div className="section-divider-top mb-12 h-px bg-black/10" />
       
       <motion.h2 

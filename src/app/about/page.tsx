@@ -7,13 +7,15 @@ import { Ethics } from "@/components/sections/Ethics";
 
 export default function AboutPage() {
   return (
-    <main className="max-w-[1400px] mx-auto px-6 lg:px-12 bg-[#F4F3EE]">
-      <Navbar />
-      <AboutHero />
-      <MyStory />
-      <Credentials />
-      <Ethics />
-      <Footer />
+    <main className="min-h-screen bg-[#F0F0E8]">
+      <div className="mx-auto">
+        <Navbar />
+        <AboutHero />
+        <MyStory />
+        <Credentials />
+        <Ethics />
+        <Footer />
+      </div>
     </main>
   );
 }

@@ -3,18 +3,12 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { HOME_CONTENT } from "@/data/mockData";
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from "@/components/ui/accordion";
 
 export function ServicesSnippet() {
   const { services } = HOME_CONTENT;
 
   return (
-    <section className="px-6 md:px-12 py-24 bg-[#F0F0E8] overflow-hidden">
+    <section className="px-global py-24 bg-[#F0F0E8] overflow-hidden">
       <div className="mb-16">
         <motion.h2 
           initial={{ opacity: 0, x: -50 }}
@@ -37,31 +31,30 @@ export function ServicesSnippet() {
       <div className="w-full h-px bg-black/5" />
       
       <div className="mt-8">
-        <Accordion className="w-full">
+        <div className="w-full flex flex-col">
           {services.items.map((service, index) => (
-            <AccordionItem 
+            <div 
               key={service.name} 
-              value={`item-${index}`} 
-              className="border-b border-black/5 py-6 group hover:bg-black/[0.02] transition-colors px-4"
+              className="border-b border-black/5 py-8 group hover:bg-black/[0.02] transition-colors duration-500 px-4 cursor-pointer"
             >
-              <div className="flex justify-between items-center w-full">
-                <AccordionTrigger className="hover:no-underline flex-1 text-left py-0">
-                  <div className="flex justify-between items-center w-full group">
-                    <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#333333] group-hover:pl-4 transition-all duration-500">
-                      {service.name}
-                    </h3>
-                    <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#63cf17] transition-colors">
-                      <ArrowUpRight className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors" />
-                    </div>
-                  </div>
-                </AccordionTrigger>
+              <div className="flex justify-between items-center w-full mb-0 group-hover:mb-4 transition-all duration-500">
+                <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#333333] group-hover:pl-4 transition-all duration-500">
+                  {service.name}
+                </h3>
+                <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#63cf17] transition-colors">
+                  <ArrowUpRight className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors" />
+                </div>
               </div>
-              <AccordionContent className="mt-4 text-slate-500 text-lg max-w-xl transition-all duration-500 ease-in-out">
-                {service.description}
-              </AccordionContent>
-            </AccordionItem>
+              <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows,opacity] duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                <div className="overflow-hidden">
+                  <p className="text-slate-500 text-lg max-w-xl pb-2">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

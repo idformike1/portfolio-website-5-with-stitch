@@ -11,7 +11,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#6B705C] pt-24 pb-12 px-6 md:px-12 text-[#F0F0E8] relative mt-32">
+    <footer className="bg-[#6B705C] pt-24 pb-12 px-global text-[#F0F0E8] relative mt-32">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-end">
         <div className="space-y-12">
           <div>

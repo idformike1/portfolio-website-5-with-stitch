@@ -7,8 +7,8 @@ export function ServicesHero() {
   const { hero } = SERVICES_CONTENT;
 
   return (
-    <section className="px-6 py-12 lg:px-12 text-center lg:text-left">
-      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+    <section className="px-global py-12 text-center lg:text-left">
+      <div className="flex flex-col gap-6">
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -19,12 +19,12 @@ export function ServicesHero() {
         </motion.h1>
         
         <motion.div 
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="max-w-md lg:pb-4"
+          className="max-w-2xl lg:pb-4"
         >
-          <p className="text-sm font-medium leading-relaxed text-slate-600">
+          <p className="text-lg font-medium leading-tight text-slate-600">
             {hero.description}
           </p>
         </motion.div>

@@ -8,7 +8,7 @@ export function DiscoveryCTA() {
   const { cta } = SERVICES_CONTENT;
 
   return (
-    <section className="px-6 lg:px-12 mb-32">
+    <section className="px-global mb-32">
       <motion.div 
         initial={{ opacity: 0, scale: 0.98 }}
         whileInView={{ opacity: 1, scale: 1 }}

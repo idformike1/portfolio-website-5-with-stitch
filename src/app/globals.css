@@ -124,3 +124,9 @@
     @apply bg-background text-foreground font-[family-name:var(--font-space-grotesk)];
   }
 }
+
+@layer utilities {
+  .px-global {
+    @apply px-6 lg:px-12;
+  }
+}

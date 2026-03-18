@@ -7,13 +7,13 @@ export function BlogHero() {
   const { hero } = BLOG_CONTENT;
 
   return (
-    <section className="px-6 pt-20 pb-12 border-b border-[#6b705c]/10">
+    <section className="px-global pt-20 pb-12 border-b border-[#6b705c]/10">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex gap-4 text-xs font-bold uppercase tracking-widest text-slate-500"
+            className="flex flex-wrap justify-center md:justify-start gap-4 text-xs font-bold uppercase tracking-widest text-slate-500 w-full"
           >
             {hero.tags.map((tag, idx) => (
               <span key={tag}>

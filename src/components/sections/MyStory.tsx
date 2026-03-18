@@ -7,7 +7,7 @@ export function MyStory() {
   const { story } = ABOUT_CONTENT;
 
   return (
-    <section className="py-24 max-w-5xl">
+    <section className="py-24 px-global">
       <motion.h2 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

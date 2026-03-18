@@ -8,7 +8,7 @@ export function WorkPortfolio() {
   const { projects } = WORK_CONTENT;
 
   return (
-    <section className="px-6 md:px-20 lg:px-40 py-24 bg-white">
+    <section className="px-global py-24 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
           {projects.map((project, index) => (

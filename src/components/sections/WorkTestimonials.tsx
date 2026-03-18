@@ -8,7 +8,7 @@ export function WorkTestimonials() {
   const { testimonials } = WORK_CONTENT;
 
   return (
-    <section className="px-6 md:px-20 lg:px-40 py-32 bg-[#F0F0E8] border-y border-black/5">
+    <section className="px-global py-32 bg-[#F0F0E8] border-y border-black/5">
       <div className="max-w-7xl mx-auto">
         <motion.h4 
           initial={{ opacity: 0, y: -10 }}

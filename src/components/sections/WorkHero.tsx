@@ -7,7 +7,7 @@ export function WorkHero() {
   const { hero } = WORK_CONTENT;
 
   return (
-    <section className="pt-32 pb-12 px-6 md:px-20 lg:px-40 relative">
+    <section className="pt-32 pb-12 px-global relative">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, scale: 0.9 }}
@@ -42,12 +42,12 @@ export function WorkHero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex gap-4 overflow-x-auto pb-2 no-scrollbar"
+            className="flex flex-wrap gap-2 md:gap-4 pb-2 justify-center md:justify-end"
           >
             {hero.filters.map((filter, index) => (
               <span 
                 key={filter}
-                className={`px-6 py-3 rounded-full text-[10px] font-bold tracking-widest whitespace-nowrap cursor-pointer transition-all ${
+                className={`w-[130px] md:w-[150px] text-center py-3 rounded-full text-[10px] font-bold tracking-widest cursor-pointer transition-all ${
                   index === 0 
                   ? "bg-[#63cf17] text-white" 
                   : "bg-white border border-black/5 text-slate-500 hover:bg-slate-50"

@@ -13,7 +13,7 @@ export function BlogFeed() {
   const { recentInsights } = BLOG_CONTENT;
 
   return (
-    <section className="px-6 py-24 bg-white">
+    <section className="px-global py-24 bg-white">
       <div className="mx-auto max-w-7xl">
         <div className="mb-20">
           <motion.h3 

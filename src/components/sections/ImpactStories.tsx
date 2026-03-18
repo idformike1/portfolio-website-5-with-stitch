@@ -7,7 +7,7 @@ export function ImpactStories() {
   const { impact } = HOME_CONTENT;
 
   return (
-    <section className="px-6 md:px-12 py-24 bg-slate-50/50">
+    <section className="px-global py-24 bg-slate-50/50">
       <div className="mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}

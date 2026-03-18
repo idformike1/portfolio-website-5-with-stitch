@@ -9,7 +9,7 @@ export function ContactForm() {
   const { info, form } = CONTACT_CONTENT;
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-12 gap-16 px-6 md:px-12 lg:px-24 py-24 bg-[#F0F0E8]/50 border-t border-black/5">
+    <section className="grid grid-cols-1 lg:grid-cols-12 gap-16 px-global py-24 bg-[#F0F0E8]/50 border-t border-black/5">
       <div className="lg:col-span-5 flex flex-col justify-between space-y-16">
         <div className="space-y-16">
           <motion.div 

@@ -13,7 +13,7 @@ export function TechStack() {
   const { techStack } = SERVICES_CONTENT;
 
   return (
-    <section className="px-6 lg:px-12 mb-32">
+    <section className="px-global mb-32">
       <div className="border-t border-[#707a5e]/20 pt-24 pb-12">
         <motion.h2 
           initial={{ opacity: 0, x: -20 }}
