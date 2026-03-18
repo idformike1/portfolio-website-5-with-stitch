@@ -14,10 +14,11 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const navLinks = [
+    { name: "Work", href: "/work" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (

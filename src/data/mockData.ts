@@ -259,3 +259,101 @@ export const BLOG_CONTENT = {
     ],
   },
 };
+
+export const WORK_CONTENT = {
+  hero: {
+    title: "WORK.",
+    subtitle: "PORTFOLIO",
+    description: "Precision nutrition for elite performance. High-impact clinical case studies in sports science and metabolic optimization.",
+    filters: ["ALL PROJECTS", "OLYMPIC PREP", "PRO TEAMS", "ENDURANCE"],
+  },
+  projects: [
+    {
+      id: "01",
+      category: "Case Study 01 / Olympic Prep",
+      title: "Olympic Prep 2024",
+      description: "Metabolic Efficiency & Peak Power Output optimization for elite track athletes.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzcWsckaaqXfkKjjKRs4nR88zNpgiYwijBWxopUMjQ32AxCbL5RCMpgzHtWI0o7StoeoLyN8Br8bN8M_7_ogyLzAIWyR0xaInFnOCaakxMyJt5jp9sV0lGZDuK8KpIdRDBWa7SpO6tHIhaM6zEoB_KwqiYgECVZ2qYXDk6WaeZz_8LU1v0_RgYt3CXNZ7FHq6sUeU-LlryyrO2l8_dlnBohFBLGYWPTSeQfMud8HFgkeu3Vm636tp5pnTjWiiYzxzEQnbJsrbC",
+      metrics: [
+        { label: "Endurance Gain", value: "+20%" },
+        { label: "Recovery Rate", value: "100%" },
+      ],
+    },
+    {
+      id: "02",
+      category: "Case Study 02 / Marathon Pro",
+      title: "Elite Team Transformation",
+      description: "Systematic recovery protocols and personalized gut health mapping for long-distance performance.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC-CSdUyV-AYVyiN7lNA2RyvmUPfz07_JDdhZVW0_-kK2cVoybOulJ85LJm9mrhoF8J5b2ZUdACkAFFwBrDjlQiEMOd6fv1F8-2TJFBn6hGwGkoSyo2-UERHfg3bkcfl0aI3U8LoyjKHPQ8hRDNrrB1IqYlBoZjvntFwGwOq85ww-pbXQrys6lFgGDyW89bwyh_Pguw6W32ubn0yjbcNijggSm8nOUKHlM6m29k0ZeMm2R5wZHxyi8E9ttzb6137FommiD9XHqD",
+      metrics: [
+        { label: "Marathon Goal Met", value: "Sub-3" },
+        { label: "Fueling Efficiency", value: "Optimized" },
+      ],
+    },
+  ],
+  testimonials: {
+    title: "Impact & Testimonials",
+    items: [
+      {
+        quote: "The metabolic mapping changed my entire approach to race day. I've never felt more in control of my energy levels.",
+        author: "Marcus Chen",
+        role: "Pro Triathlete",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCLGC1PXATpC6i_DpwoHYQsKCXtC8UD3qa8EVo-kIA1plu32puDsOfbp0rKSUO0Sc6sSon4Y7d9AX4kkiTYhKXHx1UF_czQReblOtSSUHpdgyTH19qCf4Ae7xFS_kuWqHTmDHqYlLG8KhSgFfqexigheMqUcbvjylH2-kZ5GIoS639x74zNvVNXFToHmxuYOriJ1JC6iNvJ_Bb8d9Ns_fKti6n-u1p7davhqekZ0WGkUrvqKMj8dYgGd1R840qc6fLM-bzSpXrx",
+      },
+      {
+        quote: "Aisha's systematic approach to nutrition for the entire team led us to our best season recovery metrics in 5 years.",
+        author: "David Henderson",
+        role: "Team Director, Velocity Racing",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB0Ebf-Z2yEyKbh2L2nTox6Hi95OQbAejIirlFR8qPgeuxaK9qjiRCkv4sUclnhIpj6Pq7Ln_K8BWwhqSKaj-Z8Ljsw5NDbpaStS4a8OFKkfxa5Lwkr1m-26Ll4hpdioeIogfIIsi-1zZLvkoxKyIy2N2lR3m-aC9CjHth7f6971WOeZIEUbYRma_ehmmXVxpgom6fxkNuObsCpcgf2e_XdHPcg72_QoO50haXz5aDH5B4zs6O6phRc8M-IwogQi6J7Lr6WFQqa",
+      },
+      {
+        quote: "Beyond just a diet plan, it was a physiological education. I understand my body's needs at every stage of training now.",
+        author: "Elena Rodriguez",
+        role: "Olympic Sprinter",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA318p-vd7O5Ac6eoi-U9tL9evr3i1o3fzUDsSc7g8OQl3IzOMebf1Pk50qvBJgpa_pEKdh3OWvMD8zoEk032OU7b7HzLnNVUxQDKIveX7_m5eNP2S4z27lJpyBES4vnDTQfvC7LDZ4cHsePhu-iO6ZuT4bafO3M0MbSCUN9hgjgkXGW6F4xqQGarxsoW3PqthdA5lDOz39C5C62-NW55gJr5e6aA2Sc4STR1T6Fkjzjtj-eBnnrYVcacAvK8iArV9ed_zcqzNy",
+      },
+    ],
+  },
+  collaborations: {
+    title: "COACHING COLLABORATIONS.",
+    description: "I partner with elite coaching staffs and sports science labs to integrate nutrition as a core pillar of performance strategy. My methodology is designed to complement existing training loads and physiological goals.",
+    features: [
+      "Integrated Performance Teams (IPT)",
+      "Biometric Data Integration",
+      "Staff Education & Workshop Series",
+    ],
+    partners: [
+      { name: "Peak Performance Institute", logo: "Peak" },
+      { name: "Global Athletics Fed.", logo: "GAF" },
+      { name: "Elite Cycling Lab", logo: "ECL" },
+      { name: "Pro Soccer Analytics", logo: "PSA" },
+    ],
+  },
+};
+
+export const CONTACT_CONTENT = {
+  hero: {
+    title: "CONTACT.",
+    subtitle: "LET'S BUILD SOMETHING EXTRAORDINARY TOGETHER",
+    description: "Whether you're an elite athlete or a pro team, I'm here to help you optimize your metabolic strategy for peak performance.",
+  },
+  info: {
+    email: "hello@aisharao.com",
+    location: "100% Virtual / Pan-India & Global",
+    socials: [
+      { name: "Instagram", href: "https://instagram.com/aisharao" },
+      { name: "LinkedIn", href: "https://linkedin.com/in/aisharao" },
+      { name: "Twitter", href: "https://twitter.com/aisharao" },
+    ],
+  },
+  form: {
+    title: "Send a Message",
+    fields: [
+      { name: "Name", type: "text", placeholder: "YOUR FULL NAME" },
+      { name: "Email", type: "email", placeholder: "YOUR EMAIL ADDRESS" },
+      { name: "Subject", type: "select", options: ["Sports Nutrition Coaching", "Speaking Engagement", "Collaboration", "Other"] },
+      { name: "Message", type: "textarea", placeholder: "HOW CAN I HELP YOU?" },
+    ],
+    buttonText: "Send Message",
+  },
+};
