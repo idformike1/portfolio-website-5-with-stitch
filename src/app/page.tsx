@@ -4,16 +4,20 @@ import { Hero } from "@/components/sections/Hero";
 import { AboutSnippet } from "@/components/sections/AboutSnippet";
 import { ServicesSnippet } from "@/components/sections/ServicesSnippet";
 import { ImpactStories } from "@/components/sections/ImpactStories";
+import { WorkPortfolio } from "@/components/sections/WorkPortfolio";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar />
-      <Hero />
-      <AboutSnippet />
-      <ImpactStories />
-      <ServicesSnippet />
+      <main id="main-content">
+        <Hero />
+        <AboutSnippet />
+        <WorkPortfolio />
+        <ImpactStories />
+        <ServicesSnippet />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

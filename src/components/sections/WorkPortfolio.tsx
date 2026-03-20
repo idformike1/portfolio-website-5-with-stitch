@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { WORK_CONTENT } from "@/data/mockData";
@@ -8,11 +9,11 @@ export function WorkPortfolio() {
   const { projects } = WORK_CONTENT;
 
   return (
-    <section className="px-global py-24 bg-white">
+    <section className="px-global py-24 bg-white" aria-label="Portfolio Work">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
           {projects.map((project, index) => (
-            <motion.div 
+            <motion.article 
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -21,10 +22,12 @@ export function WorkPortfolio() {
               className="group cursor-pointer"
             >
               <div className="aspect-[16/10] overflow-hidden rounded-sm mb-10 bg-slate-100 relative shadow-2xl transition-all duration-700 group-hover:scale-[1.02]">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110   opacity-80 group-hover:opacity-100" 
+                  fill
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100" 
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-[#63cf17]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               </div>
@@ -41,7 +44,11 @@ export function WorkPortfolio() {
                     {project.description}
                   </p>
                 </div>
-                <div className="w-16 h-16 border-2 border-slate-100 flex items-center justify-center rounded-full group-hover:bg-[#6b705c] group-hover:border-[#6b705c] group-hover:text-white transition-all transform group-hover:rotate-45">
+                <div 
+                  className="w-16 h-16 border-2 border-slate-100 flex items-center justify-center rounded-full group-hover:bg-[#6b705c] group-hover:border-[#6b705c] group-hover:text-white transition-all transform group-hover:rotate-45"
+                  aria-label={`View details for ${project.title}`}
+                  role="button"
+                >
                   <ArrowUpRight className="w-8 h-8" />
                 </div>
               </div>
@@ -58,7 +65,7 @@ export function WorkPortfolio() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

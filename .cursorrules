@@ -1,0 +1,12 @@
+# AI Agent Directives: Senior Creative Developer
+
+## Tech Stack
+- Next.js (App Router), React 19, Tailwind CSS v4
+- Animation/Physics: GSAP, @studio-freight/lenis (To be installed later)
+- UI Base: shadcn/ui, @base-ui/react
+
+## Architectural Rules
+1. **Separation of Concerns:** Keep UI components "dumb." All GSAP animation logic MUST be extracted into custom React hooks (e.g., `useMagnetic`).
+2. **Semantic DOM:** Eradicate "div soup." Enforce strict semantic HTML5 (`<main>`, `<article>`, `<section>`, `<nav>`).
+3. **Asset Optimization:** Never use standard `<img>` tags for major assets. Always use `next/image` with proper priority routing for above-the-fold content.
+4. **Accessibility:** All custom cursors, magnetic buttons, and icon links must have proper `aria-labels`.

@@ -22,23 +22,24 @@ export function Navbar() {
   ];
 
   return (
-    <header className="flex justify-between items-center px-global py-8 text-[10px] font-bold uppercase tracking-[0.2em] border-b border-black/5 bg-[#F0F0E8]/80 backdrop-blur-sm sticky top-0 z-50">
-      <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity">
+    <nav className="flex justify-between items-center px-global py-8 text-[10px] font-bold uppercase tracking-[0.2em] border-b border-black/5 bg-[#F0F0E8]/80 backdrop-blur-sm sticky top-0 z-50" aria-label="Main Navigation">
+      <Link href="/" className="flex items-center gap-2 hover:opacity-70 transition-opacity" aria-label="Go to homepage">
         <Circle className="w-2.5 h-2.5 fill-current" />
         <span>{SITE_METADATA.tagline}</span>
       </Link>
 
-      <nav className="hidden md:flex gap-12">
+      <div className="hidden md:flex gap-12" role="menubar">
         {navLinks.map((link) => (
           <Link 
             key={link.name} 
             href={link.href} 
             className="hover:opacity-60 transition-opacity"
+            role="menuitem"
           >
             {link.name}
           </Link>
         ))}
-      </nav>
+      </div>
 
       <div className="flex items-center gap-4">
         <span className="hidden sm:inline-block">©{SITE_METADATA.year}</span>
@@ -47,7 +48,7 @@ export function Navbar() {
         <Sheet>
           <SheetTrigger
             render={
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open navigation menu">
                 <Menu className="w-5 h-5" />
               </Button>
             }
@@ -75,6 +76,6 @@ export function Navbar() {
           </SheetContent>
         </Sheet>
       </div>
-    </header>
+    </nav>
   );
 }
