@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: SITE_METADATA.tagline,
 };
 
+import { SmoothScroll } from "@/components/global/SmoothScroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,9 +25,11 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-[#6B705C] selection:bg-[#63cf17] selection:text-white`}
       >
-        <div className="main-container min-h-screen relative overflow-x-hidden bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
-          {children}
-        </div>
+        <SmoothScroll>
+          <div className="main-container min-h-screen relative overflow-x-hidden bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
+            {children}
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -1,25 +1,53 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { WORK_CONTENT } from "@/data/mockData";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function WorkPortfolio() {
   const { projects } = WORK_CONTENT;
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    const articles = gsap.utils.toArray<HTMLElement>(".portfolio-article");
+
+    articles.forEach((article) => {
+      gsap.fromTo(
+        article,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: article,
+            start: "top 85%",
+            end: "bottom 20%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+  }, { scope: containerRef });
 
   return (
-    <section className="px-global py-24 bg-white" aria-label="Portfolio Work">
+    <section className="px-global py-24 bg-white" aria-label="Portfolio Work" ref={containerRef}>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
-          {projects.map((project, index) => (
-            <motion.article 
+          {projects.map((project) => (
+            <article 
               key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: index * 0.2 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer portfolio-article overflow-hidden"
             >
               <div className="aspect-[16/10] overflow-hidden rounded-sm mb-10 bg-slate-100 relative shadow-2xl transition-all duration-700 group-hover:scale-[1.02]">
                 <Image 
@@ -65,7 +93,7 @@ export function WorkPortfolio() {
                   </div>
                 ))}
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
