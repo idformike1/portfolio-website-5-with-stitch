@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { SITE_METADATA, HOME_CONTENT } from "@/data/mockData";
 import { Button } from "@/components/ui/button";
+import { Magnetic } from "@/components/ui/Magnetic";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -67,15 +68,17 @@ export function Footer() {
 
       <div className="relative mt-20 border-t border-white/10 pt-12">
         <div className="flex justify-between items-baseline">
-          <Button 
-            onClick={scrollToTop}
-            variant="outline"
-            size="icon"
-            className="w-12 h-12 rounded-full bg-[#F0F0E8] text-[#6B705C] border-none hover:scale-110 transition-transform active:scale-95 z-30"
-            aria-label="Scroll to top of page"
-          >
-            <ArrowUp className="w-5 h-5" />
-          </Button>
+          <Magnetic>
+            <Button 
+              onClick={scrollToTop}
+              variant="outline"
+              size="icon"
+              className="w-12 h-12 rounded-full bg-[#F0F0E8] text-[#6B705C] border-none hover:scale-110 transition-transform active:scale-95 z-30"
+              aria-label="Scroll to top of page"
+            >
+              <ArrowUp className="w-5 h-5" />
+            </Button>
+          </Magnetic>
           
           <h2 className="text-[clamp(4rem,15vw,12rem)] font-bold uppercase text-[#F0F0E8]/20 leading-none select-none tracking-tighter mix-blend-soft-light">
             Aisha

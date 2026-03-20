@@ -11,6 +11,7 @@ import {
   SheetTrigger 
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { Magnetic } from "@/components/ui/Magnetic";
 
 export function Navbar() {
   const navLinks = [
@@ -30,14 +31,15 @@ export function Navbar() {
 
       <div className="hidden md:flex gap-12" role="menubar">
         {navLinks.map((link) => (
-          <Link 
-            key={link.name} 
-            href={link.href} 
-            className="hover:opacity-60 transition-opacity"
-            role="menuitem"
-          >
-            {link.name}
-          </Link>
+          <Magnetic key={link.name}>
+            <Link 
+              href={link.href} 
+              className="hover:opacity-60 transition-opacity"
+              role="menuitem"
+            >
+              {link.name}
+            </Link>
+          </Magnetic>
         ))}
       </div>
 

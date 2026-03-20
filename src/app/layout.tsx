@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 import { SmoothScroll } from "@/components/global/SmoothScroll";
+import { CustomCursor } from "@/components/global/CustomCursor";
 
 export default function RootLayout({
   children,
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-[#6B705C] selection:bg-[#63cf17] selection:text-white`}
       >
+        <CustomCursor />
         <SmoothScroll>
           <div className="main-container min-h-screen relative overflow-x-hidden bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
             {children}
