@@ -15,14 +15,14 @@ export function useMagnetic(ref: React.RefObject<HTMLElement | null>) {
     const distanceX = e.clientX - centerX;
     const distanceY = e.clientY - centerY;
 
-    const moveX = distanceX * 0.3; // Intensity multiplier
-    const moveY = distanceY * 0.3;
+    const moveX = distanceX * 0.2; // Intensity multiplier
+    const moveY = distanceY * 0.2;
 
     gsap.to(el, {
       x: moveX,
       y: moveY,
-      duration: 0.4,
-      ease: "power2.out",
+      duration: 1,
+      ease: "elastic.out(1, 0.3)",
     });
   }, [ref]);
 

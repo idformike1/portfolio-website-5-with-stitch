@@ -15,8 +15,8 @@ export function CustomCursor() {
     // Set initial position out of view
     gsap.set(cursor, { xPercent: -50, yPercent: -50 });
 
-    const xTo = gsap.quickTo(cursor, "x", { duration: 0.4, ease: "power3" });
-    const yTo = gsap.quickTo(cursor, "y", { duration: 0.4, ease: "power3" });
+    const xTo = gsap.quickTo(cursor, "x", { duration: 0.1, ease: "power2.out", overwrite: "auto" });
+    const yTo = gsap.quickTo(cursor, "y", { duration: 0.1, ease: "power2.out", overwrite: "auto" });
 
     const moveCursor = (e: MouseEvent) => {
       xTo(e.clientX);
