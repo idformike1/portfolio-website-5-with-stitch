@@ -68,7 +68,7 @@ export function ContactForm() {
           className="hidden lg:block relative aspect-[4/5] rounded overflow-hidden shadow-2xl"
         >
           <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhikI1c-nvJ4DcfuXhob1GZyApisFUmZik_vaiUOrZEN_h1uD0kirenFo7QK8USBwxkImbCfsaOTJP7HFAHTdMkpD6t-bDxqzbl39Du08eZCsZXFNh4S0akZoqhkXDSVutwOgiTEOKrPuKj_6_-SkXOWcsv2hKTIuM4UXWYxMJUcQ32cc-3_oF1bvgBSDHUn7z26fZhCnQzHD1OvPTf7hz1P7FHfRdSPHyP6g4wX0nWU1QFDKfSM_W21MHdBAHw_TpwLSuWhqG" 
+            src="/images/aisha-hero.jpg" 
             alt="Professional portrait" 
             className="w-full h-full object-cover  transition-transform duration-1000 hover:scale-110" 
           />
