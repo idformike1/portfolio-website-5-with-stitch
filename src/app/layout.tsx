@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { SITE_METADATA } from "@/data/mockData";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -30,6 +32,8 @@ export default function RootLayout({
         <SmoothScroll>
           <div className="main-container min-h-screen relative overflow-x-clip bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
             {children}
+            <Analytics />
+            <SpeedInsights />
           </div>
         </SmoothScroll>
       </body>
