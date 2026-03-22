@@ -66,8 +66,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="relative mt-20 border-t border-white/10 pt-12">
-        <div className="flex justify-between items-baseline">
+      <div className="relative mt-20 border-t border-white/10 pt-12 pb-8 md:pb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-baseline gap-8 md:gap-0">
           <Magnetic>
             <Button 
               onClick={scrollToTop}
@@ -80,11 +80,11 @@ export function Footer() {
             </Button>
           </Magnetic>
           
-          <h2 className="text-[clamp(4rem,15vw,12rem)] font-bold uppercase text-[#F0F0E8]/20 leading-none select-none tracking-tighter mix-blend-soft-light">
+          <h2 className="text-[clamp(4rem,15vw,12rem)] font-bold uppercase text-[#F0F0E8]/20 leading-none select-none tracking-tighter mix-blend-soft-light text-center">
             Aisha
           </h2>
           
-          <div className="text-[10px] font-bold opacity-60 uppercase tracking-widest text-right">
+          <div className="text-[10px] font-bold opacity-60 uppercase tracking-widest text-center md:text-right">
             @aisharao.perform_
           </div>
         </div>

@@ -37,15 +37,15 @@ export function ServicesSnippet() {
               key={service.name} 
               className="border-b border-black/5 py-8 group hover:bg-black/[0.02] transition-colors duration-500 px-4 cursor-pointer"
             >
-              <div className="flex justify-between items-center w-full mb-0 group-hover:mb-4 transition-all duration-500">
-                <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#333333] group-hover:pl-4 transition-all duration-500">
+              <div className="flex justify-between items-center w-full mb-4 transition-all duration-500 lg:mb-0 lg:group-hover:mb-4">
+                <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#333333] transition-all duration-500 lg:group-hover:pl-4">
                   {service.name}
                 </h3>
-                <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#63cf17] transition-colors">
-                  <ArrowUpRight className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors" />
+                <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 transition-colors lg:group-hover:bg-[#63cf17]">
+                  <ArrowUpRight className="w-6 h-6 text-slate-400 transition-colors lg:group-hover:text-white" />
                 </div>
               </div>
-              <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows,opacity] duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+              <div className="grid grid-rows-[1fr] opacity-100 transition-[grid-template-rows,opacity] duration-500 ease-in-out lg:grid-rows-[0fr] lg:opacity-0 lg:group-hover:grid-rows-[1fr] lg:group-hover:opacity-100">
                 <div className="overflow-hidden">
                   <p className="text-slate-500 text-lg max-w-xl pb-2">
                     {service.description}

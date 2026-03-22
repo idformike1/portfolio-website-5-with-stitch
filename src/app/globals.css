@@ -123,6 +123,11 @@
   body {
     @apply bg-background text-foreground font-[family-name:var(--font-space-grotesk)];
   }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @layer utilities {

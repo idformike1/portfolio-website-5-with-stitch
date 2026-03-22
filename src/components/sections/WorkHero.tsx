@@ -7,7 +7,7 @@ export function WorkHero() {
   const { hero } = WORK_CONTENT;
 
   return (
-    <section className="pt-32 pb-12 px-global relative">
+    <section className="pt-32 pb-12 px-global relative overflow-clip">
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, scale: 0.9 }}

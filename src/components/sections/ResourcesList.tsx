@@ -51,14 +51,14 @@ export function ResourcesList() {
                   {resource.category}
                 </div>
                 <h4 className="text-2xl font-bold text-[#333333] group-hover:text-[#6b705c] transition-colors">{resource.name}</h4>
-                <p className="mt-4 text-slate-600 opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out">
+                <p className="mt-4 text-slate-600 opacity-100 h-auto overflow-hidden transition-all duration-500 ease-in-out lg:opacity-0 lg:h-0 lg:group-hover:opacity-100 lg:group-hover:h-auto">
                   {resource.description}
                 </p>
               </div>
               
               <div className="flex items-center gap-4">
-                <span className="text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-50 transition-opacity text-[#333333]">Visit Site</span>
-                <div className="h-10 w-10 flex items-center justify-center border border-[#6b705c]/20 rounded-full group-hover:bg-[#6b705c] group-hover:text-white transition-all transform group-hover:scale-110">
+                <span className="text-xs font-bold uppercase tracking-widest opacity-100 transition-opacity text-[#333333] lg:opacity-0 lg:group-hover:opacity-50">Visit Site</span>
+                <div className="h-10 w-10 flex items-center justify-center border border-[#6b705c]/20 rounded-full bg-slate-100 text-[#333333] transition-all transform lg:bg-transparent lg:text-inherit lg:group-hover:bg-[#6b705c] lg:group-hover:text-white lg:group-hover:scale-110">
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>

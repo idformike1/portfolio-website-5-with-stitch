@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="relative pt-12 overflow-hidden" aria-label="Hero Section">
       <div className="relative px-global text-center z-10">
-        <div className="flex justify-between items-start mb-[-2rem] md:mb-[-4rem]">
+        <div className="flex justify-between items-start mb-2 md:mb-[-4rem]">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ export function Hero() {
         </motion.h1>
       </div>
 
-      <div className="px-global relative -mt-10 md:-mt-20">
+      <div className="px-global relative mt-0 md:-mt-20">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

@@ -28,7 +28,7 @@ export default function RootLayout({
       >
         <CustomCursor />
         <SmoothScroll>
-          <div className="main-container min-h-screen relative overflow-x-hidden bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
+          <div className="main-container min-h-screen relative overflow-x-clip bg-[#F0F0E8] max-w-[1440px] mx-auto shadow-2xl">
             {children}
           </div>
         </SmoothScroll>

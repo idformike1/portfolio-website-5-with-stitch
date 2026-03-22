@@ -10,12 +10,12 @@ export function CoachingCollaborations() {
   return (
     <section className="px-global py-24 mb-0 bg-white rounded-t-3xl shadow-2xl overflow-hidden relative z-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-7/12 lg:pr-8">
           <motion.h2 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl lg:text-[100px] font-bold mb-12 leading-[0.85] tracking-tighter text-[#333333] uppercase"
+            className="text-[clamp(2.5rem,11.5vw,72px)] lg:text-[72px] xl:text-[80px] font-bold mb-12 leading-[0.85] tracking-tighter text-[#333333] uppercase break-normal hyphens-none"
           >
             {collaborations.title}
           </motion.h2>
@@ -47,7 +47,7 @@ export function CoachingCollaborations() {
           </div>
         </div>
         
-        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+        <div className="w-full lg:w-5/12 grid grid-cols-2 gap-4">
           {collaborations.partners.map((partner, idx) => (
             <motion.div 
               key={partner.name}
